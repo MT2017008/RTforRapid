@@ -51,7 +51,7 @@ public class DetectVar{
 			System.out.println(type.get(i)+" "+name.get(i));
 		}
 		ArrayList<String> output=VarConv.conv(type,name);
-		FileWriter f=new FileWriter("C:\\Users\\User\\eclipse-workspace\\GettingStarted\\src\\TestCaseGen\\OutputToZ3.txt");
+		FileWriter f=new FileWriter("C:\\Users\\User\\git\\RTforRapid\\PE-DS901\\src\\TestCaseGen\\OutputToZ3.txt");
 		for(int i=0;i<output.size();i++)
 		{
 			

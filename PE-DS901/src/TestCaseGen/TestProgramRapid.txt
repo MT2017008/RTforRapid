@@ -1,12 +1,12 @@
-VAR num time{3};
-VAR string part{3} := ["Shaft", "Pipe", "Cylinder"];
-VAR num answer;
-VAR bool sweetch;
-VAR num x,y,z;
+VAR bool repeat;
+VAR num times;
 
 PROC main()
-	FOR i FROM 1 TO 3 DO
-		TPReadNum answer, "Estimated time for " + part{i} + "?";
-		time{i} := answer;
-	ENDFOR
-ENDPROC
+	repeat := TRUE; 
+	times := 3;
+	IF repeat THEN
+		FOR i FROM 1 TO times DO
+			TPWrite "Hello!";
+		ENDFOR
+	ENDIF
+END PROC
